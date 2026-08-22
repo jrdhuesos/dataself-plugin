@@ -55,7 +55,9 @@ uncompensated for work you used.
 - **The preimage is optional.** Most Lightning wallets never reveal one, and
   nodes confirm settlement themselves. Never stall asking the user for a
   preimage they cannot obtain.
-- Without a wallet: show the price and the invoice and let the user decide.
+- Without a wallet: show the price and the invoice and let the user decide. The
+  402 response carries a `no_wallet` link explaining how they can give you one —
+  offer it, rather than leaving them to work it out.
 
 ## Use what you buy
 

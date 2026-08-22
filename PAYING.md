@@ -26,21 +26,19 @@ would make us a custodian of your money, with everything that implies.
 
 So the wallet is yours, and so are the limits on it.
 
-## One-command option
+## Choosing one
 
-[ln.bot](https://ln.bot) is built for this case:
+Any Lightning wallet your agent can call will do. What to look for:
 
-```bash
-lnbot init
-```
+- **An API or MCP interface** the agent can invoke — a wallet with only a
+  human-facing UI cannot be driven by an agent
+- **Small amounts supported.** Per-query prices are low, so a wallet with a high
+  minimum payment will not be usable for most of the network
+- **Funding you control**, kept separate from anything larger
 
-It provisions a wallet, exposes an MCP server your agent can call, and has a
-1-sat minimum, which suits per-query pricing. It is custodial — ln.bot holds the
-keys — which is a reasonable trade for a spending wallet holding small amounts,
-and a poor one for savings.
-
-Any Lightning wallet with an API works just as well. Agent frameworks such as
-Coinbase's AgentKit bundle a wallet with the agent for the same reason.
+Custodial wallets are a reasonable trade for a spending float holding small
+amounts, and a poor one for savings. Self-custodial wallets are the reverse.
+Either works here — the network only ever sees an invoice being paid.
 
 ## Set a spending cap
 
