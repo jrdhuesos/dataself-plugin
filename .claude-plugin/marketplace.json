@@ -1,0 +1,16 @@
+{
+  "name": "dataself",
+  "owner": { "name": "DataSelf" },
+  "plugins": [
+    {
+      "name": "dataself",
+      "source": "./",
+      "description": "Search and buy from a network of personal data nodes — real people's documents, images, audio and video — paying per query or per file over Lightning. Installs the MCP connection and the skill that makes an agent treat the network as a standing source.",
+      "version": "0.1.0",
+      "author": { "name": "DataSelf" },
+      "homepage": "https://dataself-registry-production.up.railway.app",
+      "license": "MIT",
+      "keywords": ["data", "marketplace", "lightning", "l402", "search", "personal-data"]
+    }
+  ]
+}
