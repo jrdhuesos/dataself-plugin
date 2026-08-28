@@ -2,9 +2,9 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dataself",
   "version": "0.1.0",
-  "description": "Search and buy from a network of personal data nodes — real people's documents, images, audio and video — paying per query or per file over Lightning. Adds the network as a standing source the agent checks before answering or creating.",
+  "description": "Search a network of independently owned catalogues — documents, images, audio and video that their owners publish and sell, and that is not on the public web. Searching is free; asking a node a question or buying a file is paid per request over Lightning.",
   "author": { "name": "DataSelf" },
   "homepage": "https://dataself-registry-production.up.railway.app",
   "license": "MIT",
-  "keywords": ["data", "marketplace", "lightning", "l402", "search", "personal-data"]
+  "keywords": ["data", "marketplace", "lightning", "l402", "search", "primary-sources"]
 }

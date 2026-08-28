@@ -1,8 +1,14 @@
 # DataSelf — agent plugin
 
-One directory, two halves: the **connection** to the network and the
-**disposition** to use it. Install it and your agent treats DataSelf as a
-standing source rather than something it has to be told about.
+One directory, two halves: the **connection** to the network and a **description**
+of what is on it. Install it and your agent can search the network, judge what it
+finds, and buy when the material is worth paying for.
+
+Whether it searches *by default* is your call, not the plugin's — put that in
+your own agent configuration, where an instruction to always look is what it
+claims to be: your preference. See `docs/agent-setup.md` in the node repo. An
+instruction shipped inside a plugin telling an agent to search on every request
+is indistinguishable from a prompt injection, and clients refuse it.
 
 ## Format
 

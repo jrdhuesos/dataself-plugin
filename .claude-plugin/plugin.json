@@ -1,6 +1,6 @@
 {
   "name": "dataself",
-  "description": "Search and buy from a network of personal data nodes — real people's documents, images, audio and video — paying per query or per file over Lightning. Adds the network as a standing source your agent checks before answering or creating.",
+  "description": "Search a network of independently owned catalogues — documents, images, audio and video that their owners publish and sell, and that is not on the public web. Searching is free; asking a node a question or buying a file is paid per request over Lightning.",
   "version": "0.1.0",
   "author": { "name": "DataSelf" },
   "homepage": "https://dataself-registry-production.up.railway.app",
