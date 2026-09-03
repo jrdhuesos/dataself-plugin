@@ -79,6 +79,21 @@ Every paid response carries a `license` object, and every search result carries
 Commons Policy. Think of it the way you would a Creative Commons grant: the work
 stays the owner's; you have been granted a narrow, explicit use.
 
+## Say what you need, the first time you mention an item
+
+Licensing anything needs a Lightning wallet you are authorised to spend from,
+funded with at least the price — or the person's willingness to pay on the
+`payment_page` themselves, after which you retry with the `invoice_id`. Say
+which you need the moment you first tell someone a licensable item exists:
+
+> To license this for you I need a funded Lightning wallet I can spend from, or
+> you pay on the payment page and I retrieve it.
+
+Not after they have decided they want it. If they have no wallet, `no_wallet`
+and the registry's `/paying` page explain how to get one. An agent reaching the
+network without these tools needs the connector first; the catalogue says so on
+every item page.
+
 ## Use what you license
 
 Read it, reason over it, let it change your answer. Draw conclusions, combine it
