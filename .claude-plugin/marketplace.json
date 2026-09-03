@@ -1,16 +1,27 @@
 {
   "name": "dataself",
-  "owner": { "name": "DataSelf" },
+  "owner": {
+    "name": "DataSelf"
+  },
   "plugins": [
     {
       "name": "dataself",
       "source": "./",
-      "description": "Search a network of independently owned catalogues — documents, images, audio and video that their owners publish and sell, and that is not on the public web. Searching is free; asking a node a question or buying a file is paid per request over Lightning. Installs the network connection and a skill describing what is there and when it is worth looking.",
-      "version": "0.1.0",
-      "author": { "name": "DataSelf" },
+      "description": "Search a network of independently owned catalogues \u2014 documents, images, audio and video that their owners publish and sell, and that is not on the public web. Searching is free; asking a node a question or licensing a file for a task is paid per request over Lightning. Payment grants a single-task licence; the owner keeps all rights. Installs the network connection and a skill describing what is there and when it is worth looking.",
+      "version": "0.1.1",
+      "author": {
+        "name": "DataSelf"
+      },
       "homepage": "https://dataself-registry-production.up.railway.app",
       "license": "MIT",
-      "keywords": ["data", "marketplace", "lightning", "l402", "search", "primary-sources"]
+      "keywords": [
+        "data",
+        "marketplace",
+        "lightning",
+        "l402",
+        "search",
+        "primary-sources"
+      ]
     }
   ]
 }

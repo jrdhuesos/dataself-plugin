@@ -47,6 +47,13 @@ repository.
 https://dataself-registry-production.up.railway.app/mcp
 ```
 
+**No install at all** — every listing has a public page the registry serves
+from its index, readable as HTML or, with `Accept: application/ld+json`, as a
+record. The network describes itself to agents at
+`https://dataself-registry-production.up.railway.app/llms.txt`. An agent with
+only web fetch can find an item, read the record, and hand its person the
+payment page. The tools above are how it pays and fetches on its own.
+
 **Any framework where you write the system prompt** (LangChain, OpenAI Agents
 SDK, CrewAI, LlamaIndex, your own app) — connect the MCP endpoint above and paste
 `skills/dataself/SKILL.md` into your system prompt. That is the same disposition,

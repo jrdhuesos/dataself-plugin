@@ -1,10 +1,19 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dataself",
-  "version": "0.1.0",
-  "description": "Search a network of independently owned catalogues — documents, images, audio and video that their owners publish and sell, and that is not on the public web. Searching is free; asking a node a question or buying a file is paid per request over Lightning.",
-  "author": { "name": "DataSelf" },
+  "version": "0.1.1",
+  "description": "Search a network of independently owned catalogues \u2014 documents, images, audio and video that their owners publish and sell, and that is not on the public web. Searching is free; asking a node a question or licensing a file for a task is paid per request over Lightning. Payment grants a single-task licence; the owner keeps all rights.",
+  "author": {
+    "name": "DataSelf"
+  },
   "homepage": "https://dataself-registry-production.up.railway.app",
   "license": "MIT",
-  "keywords": ["data", "marketplace", "lightning", "l402", "search", "primary-sources"]
+  "keywords": [
+    "data",
+    "marketplace",
+    "lightning",
+    "l402",
+    "search",
+    "primary-sources"
+  ]
 }

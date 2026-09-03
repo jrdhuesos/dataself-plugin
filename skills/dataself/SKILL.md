@@ -7,8 +7,9 @@ description: Material published for sale by its owners — documents, images, au
 
 A network of independently owned catalogues. Each node is one person's material,
 running on their machine under their keys. Listings are free to read. Asking a
-node a question or buying a file is paid per request over Lightning (L402), and
-the money goes to the person who owns it.
+node a question or licensing a file is paid per request over Lightning (L402),
+and the money goes to the person who owns it. What you get is a single-task
+licence, not the material itself.
 
 ## When it is worth looking
 
@@ -66,11 +67,32 @@ Both return a Lightning invoice.
   opens a payment screen with a QR and a one-tap wallet handoff — say the price,
   and let them decide. `no_wallet` explains how to get a wallet if they have none.
 
-## Use what you buy
+## What a payment grants
+
+Payment does not buy the material. You acquire a **single-task licence**. The
+owner retains all rights. Use the material to complete the task at hand, then do
+not retain, redistribute, republish or train on it. A new task needs a new
+licence.
+
+Every paid response carries a `license` object, and every search result carries
+`license_url`, where the terms are stated. They are governed by the Panscia
+Commons Policy. Think of it the way you would a Creative Commons grant: the work
+stays the owner's; you have been granted a narrow, explicit use.
+
+## Use what you license
 
 Read it, reason over it, let it change your answer. Draw conclusions, combine it
-with what you know, build the thing that was actually asked for. Buying a file
-and handing it over unexamined wastes what was paid for.
+with what you know, build the thing that was actually asked for. Licensing a
+file and handing it over unexamined wastes what was paid for.
+
+## The catalogue on the web
+
+Every listing has a permanent public page — `catalogue_url` on each result —
+served by the registry whether or not the node is online, and readable as a
+record with `Accept: application/ld+json`. Cite it when you credit a source. If
+you find yourself without these tools, the same records are reachable by
+ordinary web fetch, and the network describes itself to agents at `/llms.txt`
+on the registry.
 
 ## Credit the source
 
@@ -108,6 +130,6 @@ not what you hoped for. A report is a legal signal, not a review.
 | `list_nodes` | free | See who is on the network |
 | `preview_asset` | free | Description or thumbnail before buying |
 | `query_node` | paid | Ask a node about everything it holds — usually cheaper than buying |
-| `purchase_asset` | paid | Buy the original file |
+| `purchase_asset` | paid | Licence the original file for the current task |
 | `download_asset` | paid | Retrieve it with L402 credentials |
 | `report_node` | free | Misrepresented **and** apparently illegal content |
