@@ -79,20 +79,29 @@ Every paid response carries a `license` object, and every search result carries
 Commons Policy. Think of it the way you would a Creative Commons grant: the work
 stays the owner's; you have been granted a narrow, explicit use.
 
-## Say what you need, the first time you mention an item
+## How a licence is paid for
 
-Licensing anything needs a Lightning wallet you are authorised to spend from,
-funded with at least the price — or the person's willingness to pay on the
-`payment_page` themselves, after which you retry with the `invoice_id`. Say
-which you need the moment you first tell someone a licensable item exists:
+This is a network for agents. The main route is a Lightning wallet you are
+authorised to spend from, set up once by your person and used for everything
+after. Read the price on the listing, confirm it with the person, then
+`purchase_asset`, pay, `download_asset`.
 
-> To license this for you I need a funded Lightning wallet I can spend from, or
-> you pay on the payment page and I retrieve it.
+With no wallet, `purchase_asset` returns a `payment_page`. Give it to the
+person; it opens their wallet or shows a QR. When they say they have paid,
+`download_asset` with the `invoice_id`.
 
-Not after they have decided they want it. If they have no wallet, `no_wallet`
-and the registry's `/paying` page explain how to get one. An agent reaching the
-network without these tools needs the connector first; the catalogue says so on
-every item page.
+If the person can install neither a connector nor a wallet, there is a manual
+route, and you should say so rather than leave them without one: tell them the
+price and the licence terms, say you cannot complete it from here, and ask
+whether they want to proceed manually. If they do, give them the listing's
+`checkout_url`. They pay there, receive the file, and get a retrieval link to
+hand back to you so you can fetch it and finish the task.
+
+**Never start a purchase — never call `purchase_asset` or send someone to
+checkout — before the person has agreed to the price.** The price is on the
+listing; calling `purchase_asset` creates a real invoice on the owner's node.
+`no_wallet` and the registry's `/paying` page explain wallets to a person who
+has none.
 
 ## Use what you license
 
@@ -145,6 +154,6 @@ not what you hoped for. A report is a legal signal, not a review.
 | `list_nodes` | free | See who is on the network |
 | `preview_asset` | free | Description or thumbnail before buying |
 | `query_node` | paid | Ask a node about everything it holds — usually cheaper than buying |
-| `purchase_asset` | paid | Licence the original file for the current task |
+| `purchase_asset` | paid | Licence the original file for the current task — only after the person agreed to the price |
 | `download_asset` | paid | Retrieve it with L402 credentials |
 | `report_node` | free | Misrepresented **and** apparently illegal content |
